@@ -1,0 +1,1171 @@
+/**
+* Template Name: Green - v4.6.0
+* Template URL: https://bootstrapmade.com/green-free-one-page-bootstrap-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Noto Serif Japanese", serif;
+  color: #444444;
+}
+
+a {
+  text-decoration: none;
+  color: #5cb874;
+}
+
+a:hover {
+  color: #80c792;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Noto Serif Japanese",serif;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #5cb874;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+.back-to-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+.back-to-top:hover {
+  background: #78c48c;
+  color: #fff;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background: #00A99D;
+  transition: all 0.5s;
+  z-index: 997;
+  height: 70px;
+}
+#header.header-scrolled {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+#header .logo {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#header .logo a {
+  color: #5cb874;
+}
+#header .logo img {
+  max-height: 40px;
+}
+
+.scrolled-offset {
+  margin-top: 70px;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.navbar li {
+  position: relative;
+}
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-size: 15px;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+.navbar a i, .navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  color: #5cb874;
+}
+.navbar .getstarted, .navbar .getstarted:focus {
+  color: #5cb874;
+  padding: 8px 25px;
+  margin-left: 30px;
+  border-radius: 4px;
+  border: 2px solid #5cb874;
+  transition: 0.3s;
+  font-size: 14px;
+}
+.navbar .getstarted:hover, .navbar .getstarted:focus:hover {
+  background: #5cb874;
+  color: #fff;
+}
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #00A99D;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+}
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  text-transform: none;
+}
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+  color: #5cb874;
+}
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
+}
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: #222222;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+.mobile-nav-toggle.bi-x {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+}
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(9, 9, 9, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+}
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+.navbar-mobile a, .navbar-mobile a:focus {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #222222;
+}
+.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+  color: #5cb874;
+}
+.navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
+  margin: 15px;
+}
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
+}
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
+.navbar-mobile .dropdown ul a i {
+  font-size: 12px;
+}
+.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+  color: #5cb874;
+}
+.navbar-mobile .dropdown > .dropdown-active {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# ＜HOME画面＞　↓↓
+--------------------------------------------------------------*/
+
+.kuwasikubotan {
+  margin-top: 50px;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 70vh;
+  background-color: rgba(9, 9, 9, 0.8);
+  overflow: hidden;
+  position: relative;
+}
+#hero .carousel, #hero .carousel-inner, #hero .carousel-item, #hero .carousel-item::before {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+#hero .carousel-item::before {
+  content: "";
+  /*--------------------------------------------------------------
+# ここに　記入で背景ぼかせる
+--------------------------------------------------------------*/
+ 
+}
+#hero .carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 50px;
+  right: 50px;
+}
+#hero .container {
+  text-align: center;
+}
+#hero h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 48px;
+  font-weight: 700;
+}
+#hero p {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+  margin: 0 auto 30px auto;
+  color: #fff;
+}
+#hero .carousel-inner .carousel-item {
+  transition-property: opacity;
+  background-position: center top;
+}
+#hero .carousel-inner .carousel-item,
+#hero .carousel-inner .active.carousel-item-start,
+#hero .carousel-inner .active.carousel-item-end {
+  opacity: 0;
+}
+#hero .carousel-inner .active,
+#hero .carousel-inner .carousel-item-next.carousel-item-start,
+#hero .carousel-inner .carousel-item-prev.carousel-item-end {
+  opacity: 1;
+  transition: 0.5s;
+}
+#hero .carousel-control-next-icon, #hero .carousel-control-prev-icon {
+  background: none;
+  font-size: 30px;
+  line-height: 0;
+  width: auto;
+  height: auto;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  transition: 0.3s;
+  color: rgba(255, 255, 255, 0.5);
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#hero .carousel-control-next-icon:hover, #hero .carousel-control-prev-icon:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.8);
+}
+#hero .carousel-indicators li {
+  cursor: pointer;
+  background: #fff;
+  overflow: hidden;
+  border: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+#hero .carousel-indicators li.active {
+  opacity: 1;
+  background: #5cb874;
+}
+#hero .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 4px;
+  transition: 0.5s;
+  line-height: 1;
+  color: #fff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  background: #5cb874;
+}
+#hero .btn-get-started:hover {
+  background: #6ec083;
+}
+@media (max-width: 992px) {
+  #hero {
+    height: 100vh;
+  }
+  #hero .carousel-container {
+    top: 66px;
+  }
+}
+@media (max-width: 768px) {
+  #hero h2 {
+    font-size: 28px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero .carousel-control-prev, #hero .carousel-control-next {
+    width: 5%;
+  }
+}
+@media (max-height: 500px) {
+  #hero {
+    height: 120vh;
+  }
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+}
+
+.section-bg {
+  background-color: #f8fcf9;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  margin-top: 20px;
+}
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #5cb874;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+.section-title p {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #919191;
+}
+
+
+
+/*--------------------------------------------------------------
+# About Us
+--------------------------------------------------------------*/
+
+
+.about .content h3 {
+  font-family:"YuKyokasho";
+  font-weight: 500;
+  color:#00A99D;
+  font-size: 28px;
+  line-height:80px;
+  margin-left: 30px;
+}
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+.about .content ul li p{
+  padding-bottom: 10px;
+  margin-left: 30px;
+}
+.about .content ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #5cb874;
+  
+}
+.about .content p:last-child {
+  margin-bottom: 30px;
+}
+
+.about a {
+  
+  margin-left:auto;
+  margin-right:auto;
+  
+
+}
+.about .btn-get-started {
+ width: 100px;
+    font-family: Lato, "Noto Sans JP", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: rgb(252, 250, 242);
+    font-size: 13px;
+    text-align: center;
+    line-height: 170%;
+    float: center;
+    background-color: rgb(55, 60, 56);
+    opacity: 0.5;
+    text-decoration: none;
+    padding: 7px 15px;
+    border-radius: 40px;
+    transition: opacity 1s ease 0s;
+  
+}
+.about .btn-get-started:hover {
+  background: #6ec083;
+}
+
+.about .card-body h3{
+    margin: 0;
+    padding: 15px 22px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    background: #00A99D;
+}
+
+.about .card-text{
+  line-height:35px;
+}
+
+
+.insta_btn {
+  display: inline-block;
+  text-align: center;/*中央揃え*/
+  color: #2e6ca5;/*文字色*/
+  font-size: 20px;/*文字サイズ*/
+  text-decoration: none;/*下線消す*/
+}
+
+.insta_btn:hover {/*ホバー時*/
+  color:#668ad8;/*文字色*/
+  transition: .5s;/*ゆっくり変化*/
+}
+
+.insta_btn .insta{/*アイコンの背景*/
+  position: relative;/*相対配置*/
+  display: inline-block;
+  width: 50px;/*幅*/
+  height: 50px;/*高さ*/
+  background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;/*グラデーション①*/
+  overflow: hidden;/*はみ出た部分を隠す*/
+  border-radius: 13px;/*角丸に*/
+
+}
+
+.insta_btn .insta:before{/*グラデーションを重ねるため*/
+  content: '';
+  position: absolute;/*絶対配置*/
+  top: 23px;/*ずらす*/
+  left: -18px;/*ずらす*/
+  width: 60px;/*グラデーションカバーの幅*/
+  height: 60px;/*グラデーションカバーの高さ*/
+  background: -webkit-radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
+  background: radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);/*グラデーション②*/
+}
+
+.insta_btn .fa-instagram {/*アイコン*/
+  color: #FFF;/*白に*/
+  position: relative;/*z-indexを使うため*/
+  z-index: 2;/*グラデーションより前に*/
+  font-size: 35px;/*アイコンサイズ*/
+  line-height: 50px;/*高さと合わせる*/
+}
+
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services .icon-box {
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+}
+.services .icon-box .icon {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 0.3s;
+  position: relative;
+}
+.services .icon-box .icon i {
+  font-size: 36px;
+  transition: 0.5s;
+  position: relative;
+}
+.services .icon-box .icon svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.services .icon-box .icon svg path {
+  transition: 0.5s;
+  fill: #f5f5f5;
+}
+.services .icon-box h4 {
+  font-weight: 600;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+}
+.services .icon-box h4 a {
+  color: #222222;
+  transition: ease-in-out 0.3s;
+}
+.services .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.services .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+}
+
+.services .iconbox-teal i {
+  color: #11dbcf;
+}
+.services .iconbox-teal:hover .icon i {
+  color: #fff;
+}
+.services .iconbox-teal:hover .icon path {
+  fill: #11dbcf;
+}
+
+/*--------------------------------------------------------------
+# menu1
+--------------------------------------------------------------*/
+.menu1 .icon-box {
+  text-align: center;
+  padding: 70px 20px 80px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+}
+
+  
+.menu1 .icon-box h4 {
+  font-weight: 600;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+}
+.menu1 .icon-box h4 a {
+  color: #222222;
+  transition: ease-in-out 0.3s;
+}
+.menu1 .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.menu1 .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+
+}
+.menu1 .iconbox-teal i {
+  color: #11dbcf;
+}
+.menu1 .iconbox-teal:hover .icon i {
+  color: #fff;
+}
+.menu1 .iconbox-teal:hover .icon path {
+  fill: #11dbcf;
+}
+
+/*--------------------------------------------------------------
+# menu2
+--------------------------------------------------------------*/
+.menu2 .icon-box {
+  text-align: center;
+  padding: 70px 20px 80px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+}
+
+.menu2 .icon-box h4 {
+  font-weight: 600;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+}
+.menu2 .icon-box h4 a {
+  color: #222222;
+  transition: ease-in-out 0.3s;
+}
+.menu2 .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.menu2 .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+
+}
+.menu2 .iconbox-teal i {
+  color: #11dbcf;
+}
+.menu2 .iconbox-teal:hover .icon i {
+  color: #fff;
+}
+.menu2 .iconbox-teal:hover .icon path {
+  fill: #11dbcf;
+}
+
+/*--------------------------------------------------------------
+# menu3
+--------------------------------------------------------------*/
+.menu3 .icon-box {
+  text-align: center;
+  padding: 70px 20px 80px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+}
+
+.menu3 .icon-box h4 {
+  font-weight: 600;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+}
+.menu3 .icon-box h4 a {
+  color: #222222;
+  transition: ease-in-out 0.3s;
+}
+.menu3 .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.menu3 .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+
+}
+.menu3 .iconbox-teal i {
+  color: #11dbcf;
+}
+.menu3 .iconbox-teal:hover .icon i {
+  color: #fff;
+}
+.menu3 .iconbox-teal:hover .icon path {
+  fill: #11dbcf;
+}
+
+/*--------------------------------------------------------------
+# menu4
+--------------------------------------------------------------*/
+.menu4 .icon-box {
+  text-align: center;
+  padding: 70px 20px 80px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+}
+
+.menu4 .icon-box h4 {
+  font-weight: 600;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+}
+.menu4 .icon-box h4 a {
+  color: #222222;
+  transition: ease-in-out 0.3s;
+}
+.menu4 .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.menu4 .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+
+}
+.menu4 .iconbox-teal i {
+  color: #11dbcf;
+}
+.menu4 .iconbox-teal:hover .icon i {
+  color: #fff;
+}
+.menu4 .iconbox-teal:hover .icon path {
+  fill: #11dbcf;
+}
+
+
+/*--------------------------------------------------------------
+# topics
+--------------------------------------------------------------*/
+.topics .koe_group {
+  margin-top:50px;
+}
+
+
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact .info {
+  border-top: 3px solid #5cb874;
+  border-bottom: 3px solid #5cb874;
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+.contact .info i {
+  font-size: 20px;
+  color: #5cb874;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #eaf6ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #222222;
+}
+.contact .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #555555;
+}
+.contact .info .social-links {
+  padding-left: 60px;
+}
+.contact .info .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+.contact .info .social-links a:hover {
+  background: #5cb874;
+  color: #fff;
+}
+.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+  background: #5cb874;
+  color: #fff;
+}
+.contact .php-email-form {
+  width: 100%;
+  border-top: 3px solid #5cb874;
+  border-bottom: 3px solid #5cb874;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+.contact .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+.contact .php-email-form input, .contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+  border-color: #5cb874;
+}
+.contact .php-email-form input {
+  height: 44px;
+}
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+.contact .php-email-form button[type=submit] {
+  background: #5cb874;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+.contact .php-email-form button[type=submit]:hover {
+  background: #6ec083;
+}
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*--------------------------------------------------------------
+# ＜HOME画面ここまで＞　↑↑
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+#< MENU画面＞　
+--------------------------------------------------------------*/
+.menu p{
+  line-height: 180%;
+}
+
+.menu h3 {
+  margin-top:20px;
+  margin-bottom:20px;
+  font-family:"YuKyokasho";
+  font-weight: normal;
+  color:#00A99D;
+  font-size: 29px;
+  line-height:60px;
+  margin-left: 30px;
+}
+
+.menu-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.menu-title h2 {
+  font-size: 30px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.menu-title  h2::after{
+  content: "";
+    position: absolute;
+    background: #A5DEE4;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    opacity: 70%; 
+}
+
+.kitaidekiru-kouka  li{
+    position: relative;
+    padding: 0 0 15px 25px !important;
+    margin: 0 0 15px 0 !important;
+    text-align: left !important;
+    list-style:none;
+}
+
+.kitaidekiru-kouka li::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: .5em;
+  left: -1.5em;
+  width: 20px;
+  height: 9px;
+  border-left: 4px solid #00A99D;
+  border-bottom: 4px solid #00A99D;
+  transform: rotate(-45deg);
+}
+
+
+
+
+.situmon dt{
+  font-family:"YuKyokasho";
+  margin-bottom: 29px;
+  padding: 3px 0 0 50px;
+  min-height: 34px;
+  position: relative;
+  color: #00A99D;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.situmon dd{
+   font-family:"YuKyokasho";  
+    margin-bottom: 55px;
+    padding-left: 50px;
+    min-height: 34px;
+    font-size: 15px;
+}
+
+a.btn--yellow {
+  
+  text-align: center;
+  color: #FFFAF1;
+  background-color: #00A99D;
+  border-bottom: 5px solid #128880;
+}
+
+a.btn--yellow:hover {
+  margin-top: 3px;
+  color:#FFFAF1;
+  background: #00A99D;
+  border-bottom: 2px solid #128880;
+}
+
+.before-after{
+  margin-top:50px;
+}
+
+
+.price{
+  margin-top:0px;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: #00A99D;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+}
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+#footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+#footer .social-links {
+  margin-top:0px;
+  margin: 20px 0 40px 0;
+}
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #5cb874;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+#footer .social-links a:hover {
+  background: #449d5b;
+  color: #fff;
+  text-decoration: none;
+}
+#footer .copyright {
+  margin: 0 0 5px 0;
+}
+#footer .credits {
+  font-size: 13px;
+}
+
+
+

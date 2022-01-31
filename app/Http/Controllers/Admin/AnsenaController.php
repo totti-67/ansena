@@ -23,6 +23,16 @@ class AnsenaController extends Controller
       return view('user.topics');
   }
   
+   public function news()
+  {
+      return view('user.news');
+  }
+  
+   public function voice()
+  {
+      return view('user.voice');
+  }
+  
    public function menu1()
   {
       return view('user.menu.menu1');
@@ -76,6 +86,11 @@ class AnsenaController extends Controller
   public function menu11()
   {
       return view('user.menu.menu11');
+  }
+  
+   public function kinki()
+  {
+      return view('user.kinki');
   }
   
 }

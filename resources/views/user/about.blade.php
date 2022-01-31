@@ -56,7 +56,7 @@
       
     <div class="col-sm">
       <div class="card " style="width: 25rem;">
-   <img src="{{secure_asset('assets/img/about/athome.jpg')}}"  alt="" width="100%" height="250" style =" text-align: center; ">
+   <img src="{{secure_asset('assets/img/about/tokucho1.jpg')}}"  alt="" width="100%" height="100%" style =" text-align: center; ">
   <div class="card-body">
       <h3 class ="head-line ">アットホームな空間</h3>
     <p class="card-text">創立9年目、リピート率９２％。個人サロンならではのお客様との距離の近さ。<br>お客様が心身ともに、ホッとできる居心地の良い環境を心がけております。</p>
@@ -66,9 +66,9 @@
     
     <div class="col-sm">
       <div class="card" style="width: 25rem;">
-  <img src="{{secure_asset('assets/img/about/habahiroimenu.jpg')}}"  alt="" width="100%" height="250" style =" text-align: center; ">
+  <img src="{{secure_asset('assets/img/about/tokucho2.jpg')}}"  alt="" width="100%" height="100%" style =" text-align: center; ">
   <div class="card-body">
-      <h3>幅広いメニュー内容</h3>
+      <h3>健康と美の融合メニュー</h3>
     <p class="card-text">オーナー自らが体験して良いと思った選りすぐりの体の外側から内側までケアできるメニューを多数取り揃えております。お客様一人一人に合わせたご提案が可能です。
    </p>
   </div>
@@ -77,7 +77,7 @@
     
     <div class="col-sm">
       <div class="card" style="width: 25rem;">
-  <img src="{{secure_asset('assets/img/about/custmer.jpg')}}"  alt="" width="100%" height="250" style =" text-align: center; ">
+  <img src="{{secure_asset('assets/img/about/tokucho3.jpg')}}"  alt="" width="100%" height="100%" style =" text-align: center; ">
   <div class="card-body">
       <h3>幅広い層のお客様</h3>
     <p class="card-text">年齢や障害の垣根も越え、世界で活躍するアスリートや芸能関係者など多種多様な業種の方もご来店。ここでしかできないケアをご体感いただいております。</p>
@@ -100,7 +100,7 @@
         
         <div class="row">
           <div class="col-lg-3 order-1 order-lg-1">
-            <img src="{{secure_asset('assets/img/about/owner.jpg')}}"  height="400"  alt="" 　>
+            <img src="{{secure_asset('assets/img/about/owner.jpg')}}" class="owner" height="400"  alt="" 　>
            
             
             

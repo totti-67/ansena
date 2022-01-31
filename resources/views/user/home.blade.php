@@ -7,7 +7,9 @@
 {{-- admin.blade.phpの@yield('content')に以下のタグを埋め込む --}}
 @section('content')
      <!-- ======= Hero Section ======= -->
-  <section id="hero">
+  
+    
+      <section id="hero">
     <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
       <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
@@ -15,7 +17,7 @@
       <div class="carousel-inner" role="listbox">
 
         <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image: url({{secure_asset('assets/img/slide/slide2-2.png')}})">
+        <div class="carousel-item active" style="background-image: url({{secure_asset('assets/img/slide/slide-1.png')}})">
           <div class="carousel-container">
             <div class="container">
             
@@ -26,7 +28,7 @@
         </div>
 
         <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url({{secure_asset('assets/img/slide/slide2-1.png')}})">
+        <div class="carousel-item" style="background-image: url({{secure_asset('assets/img/slide/slide-2.png')}})">
           <div class="carousel-container">
             <div class="container">
               
@@ -36,7 +38,7 @@
         </div>
 
         <!-- Slide 3 -->
-        <div class="carousel-item" style="background-image: url({{secure_asset('assets/img/slide/slide2-3.png')}})">
+        <div class="carousel-item" style="background-image: url({{secure_asset('assets/img/slide/slide-3.png')}})">
           <div class="carousel-container">
             <div class="container">
              
@@ -59,15 +61,18 @@
   </section><!-- End Hero -->
   
   
+  
+ 
    <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
+      
       <div class="container">
 
        
 
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2">
-            <img src="{{secure_asset('assets/img/menu/kinpaku.jpg')}}" class="img-fluid" alt="">
+            <img src="{{secure_asset('assets/img/menu/kinpaku.JPG')}}" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
             <h3>「カラダをつくる」</h3>
@@ -85,7 +90,7 @@
 
       </div>
       
-      
+       
     </section><!-- End About Us Section -->
     
     
@@ -94,7 +99,7 @@
     
     
       <!-- ======= MENU/フェイシャル　Section ======= -->
-    <section id="menu3" class="menu3">
+    <section id="menu-box1" class="menu-box">
       <div class="container">
 
         <div class="section-title">
@@ -105,11 +110,11 @@
         
         <div class="row">
 
-         <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-teal">
-               <img src="{{secure_asset('assets/img/menu/kinpaku.jpg')}}" class="img-fluid" alt="">
+               <img src="{{secure_asset('assets/img/menu/kinpaku2.jpg')}}" class="img-fluid" alt="">
               <h4><a href="{{ action('Admin\AnsenaController@menu1') }}">金箔エステ</a></h4>
-              <p>エステ専用の最高級特殊金箔を使用した金箔エステです。美白やリフトアップ、新陳代謝の促進、<br>免疫力の向上などが期待できます。</p>
+              <p>最高級のフェイシャルケア、金箔エステ<br>美肌へ導くだけでなく、免疫力をも高めます。</p>
             </div>
           </div>
 
@@ -124,8 +129,8 @@
 
          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box iconbox-teal">
-              <img src="{{secure_asset('assets/img/menu/facial.jpg')}}" class="img-fluid" alt="">
-              <h4><a href="{{ action('Admin\AnsenaController@menu3') }}">フォトフェイシャル</a></h4>
+              <img src="{{secure_asset('assets/img/menu/photo.jpg')}}" class="img-fluid" alt="">
+              <h4><a href="{{ action('Admin\AnsenaController@menu3') }}">クイック光フェイシャル</a></h4>
               <p>細胞を元気に生まれ変わらせ、透明感ある素肌へ。<br>小じわ・たるみ・ニキビあと・肌質改善のフェイシャルケア。</p>
             </div>
           </div>
@@ -136,7 +141,7 @@
     </section><!-- End MENU/フェイシャル Section -->
     
      <!-- ======= MENU/BODY　Section ======= -->
-    <section id="menu2" class="menu2">
+    <section id="menu-box2" class="menu-box">
       <div class="container">
 
         <div class="section-title">
@@ -149,7 +154,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box iconbox-teal">
-              <img src="{{secure_asset('assets/img/menu/forscutter.jpg')}}" class="img-fluid" alt="">
+              <img src="{{secure_asset('assets/img/menu/forscutter.JPG')}}" class="img-fluid" alt="">
               <h4><a href="{{ action('Admin\AnsenaController@menu4') }}">フォースカッターbody</a></h4>
               <p>”温めて、柔らかくして、ほぐす”<br>を叶える、最強進化型マシン。</p>
             </div>
@@ -174,7 +179,7 @@
     </section><!-- End MENU/BODY Section -->
     
      <!-- ======= MENU/マシンメンテ　Section ======= -->
-    <section id="menu1" class="menu1">
+    <section id="menu-box3" class="menu-box">
       <div class="container">
 
         <div class="section-title">
@@ -187,26 +192,26 @@
           
            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-teal">
-              <img src="{{secure_asset('assets/img/menu/sanso.jpg')}}" class="img-fluid" alt="">
+              <img src="{{secure_asset('assets/img/menu/sanso.JPG')}}" class="img-fluid" alt="">
               <h4><a href="{{ action('Admin\AnsenaController@menu6') }}">酸素カプセル</a></h4>
-              <p>効率よくカラダを元気に　循環力を高めましょう！</p>
+              <p>効率よくカラダを元気に。<br>酸素を取り入れて循環力を高めましょう！</p>
             </div>
           </div>
           
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box iconbox-teal ">
               <img src="{{secure_asset('assets/img/menu/koragen.jpg')}}" class="img-fluid" alt="">
               <h4><a href="{{ action('Admin\AnsenaController@menu7') }}">コラーゲンマシン</a></h4>
-              <p>全身にピンクの光を浴びることで、ご自身のコラーゲンの生成が促されます。<br>小顔・美肌・うつ病・不眠症にも効果が期待できます。</p>
+              <p>カラダの芯からあったまる<br>30分間　寝ているだけで全身のトリートメントを。</p>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box iconbox-teal">
               <img src="{{secure_asset('assets/img/menu/suiso.jpg')}}" class="img-fluid" alt="">
               <h4><a href="{{ action('Admin\AnsenaController@menu8') }}">高濃度水素吸入（suisonia)</a></h4>
-              <p>水素を気体の状態で鼻から取り込むことで、水素が全身へと効率よく巡ります。<br>ストレスや運動などで体に溜まったサビを、取り除くことが可能です。</p>
+              <p>たった60分の吸入で、水素水約42本分を体内へ。<br>活性酸素を除去し、細胞レベルのエイジングケア</p>
             </div>
           </div>
 
@@ -222,7 +227,7 @@
    
     
      <!-- ======= MENU/その他　Section ======= -->
-    <section id="menu4" class="menu4">
+    <section id="menu-box4" class="menu-box">
       <div class="container">
 
         <div class="section-title">
@@ -243,9 +248,9 @@
 
          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box iconbox-teal">
-              <img src="{{secure_asset('assets/img/menu/fasting.jpg')}}" class="img-fluid" alt="">
+              <img src="{{secure_asset('assets/img/menu/fuse.jpg')}}" class="img-fluid" alt="">
               <h4><a href="{{ action('Admin\AnsenaController@menu10') }}">ファスティング</a></h4>
-              <p>「デトックス」「体質改善」「ダイエット」など全ての目的がかなうファスティング。<br>カウンセリングは無料、無理なくあなたに合ったプランをご提案します。</p>
+              <p>美しく体質改善<br>本物の最新ファスティングをご体験ください。</p>
             </div>
           </div>
           
@@ -359,8 +364,18 @@
 
         </div>
        </div>
+       
+       <div style="text-align: center" >
+            <img src="{{secure_asset('assets/img/line.png')}}" class="line" alt="" style ="height: 15%; width: 15%; text-align: center; ">
+          </div>
+          
+          <p style="text-align: center" class="line">LINEでのご予約/お問い合わせはコチラ</p>
+      
       </div>
     </section><!-- End Contact Section -->
+    
+   
+    
 
 
 @endsection

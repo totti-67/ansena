@@ -54,19 +54,19 @@
       <nav id="navbar" class="navbar">
         <ul>
       
-          <li><a class="nav-link scrollto" href="{{ action('Admin\AnsenaController@about') }}">ABOUT US</a></li>
+         
           <li class="dropdown"><a href="#"><span>MENU</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
            
-               <li class="dropdown"><a href="#menu3"><span>フェイシャル</span> <i class="bi bi-chevron-right"></i></a>
+               <li class="dropdown"><a href="#menu-box1"><span>フェイシャル</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="{{ action('Admin\AnsenaController@menu1') }}">金箔エステ</a></li>
                   <li><a href="{{ action('Admin\AnsenaController@menu2') }}">フォースカッターfacial</a></li>
-                  <li><a href="{{ action('Admin\AnsenaController@menu3') }}">フォトフェイシャル</a></li>
+                  <li><a href="{{ action('Admin\AnsenaController@menu3') }}">クイック光フェイシャル</a></li>
                 </ul>
               </li>
               
-             <li class="dropdown"><a href="#menu2"><span>BODY</span> <i class="bi bi-chevron-right"></i></a>
+             <li class="dropdown"><a href="#menu-box2"><span>BODY</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="{{ action('Admin\AnsenaController@menu4') }}">フォースカッターBODY</a></li>
                   <li><a href="{{ action('Admin\AnsenaController@menu5') }}">脱毛</a></li>
@@ -77,7 +77,7 @@
               
               
               
-               <li class="dropdown"><a href="#menu1"><span>マシンメンテナンス</span> <i class="bi bi-chevron-right"></i></a>
+               <li class="dropdown"><a href="#menu-box3"><span>マシンメンテナンス</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="{{ action('Admin\AnsenaController@menu6') }}">酸素カプセル</a></li>
                   <li><a href="{{ action('Admin\AnsenaController@menu7') }}">コラーゲンマシン</a></li>
@@ -86,7 +86,7 @@
               </li>
         
         
-          <li class="dropdown"><a href="#menu4"><span>その他</span> <i class="bi bi-chevron-right"></i></a>
+          <li class="dropdown"><a href="#menu-box4"><span>その他</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
             　　　　<li><a href="{{ action('Admin\AnsenaController@menu9') }}">布施治療（完全紹介制）</a></li>
                   <li><a href="{{ action('Admin\AnsenaController@menu10') }}">ファスティング</a></li>
@@ -98,11 +98,17 @@
             </ul>
           </li>
           
-             
+             <li><a class="nav-link scrollto" href="{{ action('Admin\AnsenaController@about') }}">ABOUT US</a></li> 
+           <li class="dropdown"><a href="{{ action('Admin\AnsenaController@topics') }}"><span>TOPICS</span> <i class="bi bi-chevron-down"></i></a>
+           
+            <ul>
+                   <li><a href="{{ action('Admin\AnsenaController@news') }}">NEWS</a></li>
+                  <li><a href="{{ action('Admin\AnsenaController@voice') }}">お客様の声</a></li>
+            </ul>      
           
-          <li><a class="nav-link scrollto" href="{{ action('Admin\AnsenaController@topics') }}">TOPICS</a></li>
+          
           <li><a class="nav-link scrollto" href="https://docs.google.com/forms/d/e/1FAIpQLSeuqIEo6cN37INCrLz2ksrT8lRfnYY91C4i4fo57nKeJ0fvcA/viewform">CONTACT</a></li>
-          <li><a class="nav-link scrollto" href="#contact">ACCESS</a></li>
+          
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

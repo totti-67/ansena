@@ -6,6 +6,8 @@
 
 {{-- admin.blade.phpの@yield('content')に以下のタグを埋め込む --}}
 @section('content')
+
+<section class="visual">
     <!-- ======= menu紹介 ======= -->
     <section id="menu" class="menu">
       <div class="container">
@@ -15,14 +17,14 @@
         </div>
 
        <div style="text-align: center" >
-            <img src="{{secure_asset('assets/img/menu/suiso.jpg')}}" class="img-fluid" alt="" style ="height: 600px; width: 800px; text-align: center; ">
+            <img src="{{secure_asset('assets/img/menu/suiso.jpg')}}" class="img-fluid" alt="" style ="height: 80%; width: 80%; text-align: center; ">
           </div>
           
             <h3 style="text-align:center">たった60分の吸入で、水素水約42本分を体内へ<br>活性酸素を除去し、細胞レベルのエイジングケア</h3>
             
             
              <p style="text-align:center">体の不調や疲れの原因のひとつである活性酸素。<br>これを除去する効果があると言われている水素を鼻から吸入することで、<br>鼻の粘膜から毛細血管を通じ、全身に行き渡ります。</p>
-            　<p style="text-align:center"> 危険性は全くなく、体内に多く摂りこまれても水となって排出されるため、<br>副作用もなく安全です。日本製で高いクオリティと信頼性を誇るマシンです。</p>
+            　<p style="text-align:center"> 危険性は全くなく、体内に多く摂りこまれても水となって排出されるため、<br>副作用もなく安全です。<span class="under">日本製で高いクオリティと信頼性を誇るマシン</span>です。</p>
               
               
               
@@ -42,14 +44,14 @@
           </div>
          
          <ul class= "kitaidekiru-kouka">
-           <li><span style="color: #00A99D"> 細胞レベルのエイジングケア</span>：老化、体調不良、アトピー、喘息、アレルギーなどさまざまなトラブルの要因である、悪玉の活性酸素を水素が除去します。</li> 
+           <li><span style="color: #00A99D"> 細胞レベルのエイジングケア</span><br>老化、体調不良、アトピー、喘息、アレルギーなどさまざまなトラブルの要因である、悪玉の活性酸素を水素が除去します。</li> 
            
         
            
         </ul>
         
         
-            <p style="text-align:center">その他効果：<u>新陳代謝アップ、免疫力アップ、疲労回復、肌荒れ改善、花粉症,アレルギーの軽減、眼精疲労の改善、ダイエット、二日酔いの改善など　</u></p> 
+            <p style="text-align:center"><u>その他効果</u><br>新陳代謝アップ、免疫力アップ、疲労回復、肌荒れ改善、花粉症,アレルギーの軽減、眼精疲労の改善<br>ダイエット、二日酔いの改善など　</p> 
        
          
            
@@ -64,11 +66,10 @@
       <!-- =======  料金 Section ======= -->
      <section id="menu" class="menu">
           <div class="container">
-     　<div class="section-title">
-          <h2>ここに料金表が入ります。</h2>
-        
-        </div>
      
+     　<div style="text-align: center" > 
+            <img src="{{secure_asset('assets/img/price/suiso.png')}}" class="price" alt="" style ="height: 100%; width: 100%; text-align: center; ">
+           </div>
      
     </div>
     </section>
@@ -122,7 +123,7 @@
     </section>
     
      <!-- ======= END　よくある質問 Section ======= -->
-     
+     </section>
     
     
 @endsection

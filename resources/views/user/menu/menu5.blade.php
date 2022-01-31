@@ -6,6 +6,7 @@
 
 {{-- admin.blade.phpの@yield('content')に以下のタグを埋め込む --}}
 @section('content')
+<section class="visual">
     <!-- ======= menu紹介 ======= -->
     <section id="menu" class="menu">
       <div class="container">
@@ -15,13 +16,13 @@
         </div>
 
        <div style="text-align: center" >
-            <img src="{{secure_asset('assets/img/menu/datumou.jpg')}}" class="img-fluid" alt="" style ="height: 600px; width: 800px; text-align: center; ">
+            <img src="{{secure_asset('assets/img/menu/datumou.jpg')}}" class="img-fluid" alt="" style ="height: 80%; width: 80%; text-align: center; ">
           </div>
           
             <h3 style="text-align:center">毛質、肌質に応じた施術が可能<br>期間に縛られない、あなたに合った脱毛を。</h3>
             
             
-             <p style="text-align:center">従来の3分の1程度の弱いエネルギーを広範囲に照射するため、刺激を最大限に抑えた施術が可能です。<br>脱毛効果が弱い・施術できないとされていた色黒・日焼け肌・金髪・産毛にも施術可能で、お肌に優しく安心！<br></p>
+             <p style="text-align:center">従来の3分の1程度の弱いエネルギーを広範囲に照射するため<br><span class="under">刺激を最大限に抑えた施術</span>が可能です。<br>脱毛効果が弱い・施術できないとされていた色黒・日焼け肌・金髪・産毛<br>にも施術可能で、お肌に優しく安心！<br></p>
               
               
               
@@ -41,9 +42,9 @@
           </div>
          
          <ul class= "kitaidekiru-kouka">
-           <li><span style="color:#00A99D">美肌の条件は通電性</span>：体には体電気と呼ばれている電気が流れており、その電気が流れやすいと新陳代謝が上がり、生まれたての弾力美白肌へ導きます。</li> 
-           <li><span style="color:#00A99D">特殊金箔・マイナスイオン効果</span>：特殊金箔から発生する電気と生体電気の波長が同じであるため、肌の内側への栄養吸収を高め、コラーゲンを吸着します。 </li> 
-           <li><span style="color:#00A99D">疲労回復・免疫力・視力回復にも効果</span>：美肌だけでなく免疫力を高め、頭痛・肩こり解消など、疲労回復や眼の疲れや視力回復などにも効果が期待できます。</li> 
+           <li><span style="color:#00A99D">美肌の条件は通電性</span><br>体には体電気と呼ばれている電気が流れており、その電気が流れやすいと新陳代謝が上がり、生まれたての弾力美白肌へ導きます。</li> 
+           <li><span style="color:#00A99D">特殊金箔・マイナスイオン効果</span><br>特殊金箔から発生する電気と生体電気の波長が同じであるため、肌の内側への栄養吸収を高め、コラーゲンを吸着します。 </li> 
+           <li><span style="color:#00A99D">疲労回復・免疫力・視力回復にも効果</span><br>美肌だけでなく免疫力を高め、頭痛・肩こり解消など、疲労回復や眼の疲れや視力回復などにも効果が期待できます。</li> 
            
         </ul>
         
@@ -82,9 +83,9 @@
         </div>
         <div class="situmon">
             <dl>
-                <dt><i class="wc-shortcodes-fa fa fa-caret-right " style="margin-right: 5px;"></i>金属アレルギーなんですが、金箔エステを受けても大丈夫でしょうか？</dt>
+                <dt><i class="wc-shortcodes-fa fa fa-caret-right " style="margin-right: 5px;"></i>どのくらいの期間で効果が実感できますか？</dt>
            
-                <dd>はい、安心してご利用ください。当店で使用している特殊金箔は、エステ専用の最高級特殊純金です。金属アレルギーを心配されている方も安心してご利用頂けます</dd>
+                <dd>最短2週間</dd>
             
             
             
@@ -108,6 +109,6 @@
     
      <!-- ======= END　よくある質問 Section ======= -->
      
-    
+    </section>
     
 @endsection

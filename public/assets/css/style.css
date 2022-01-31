@@ -27,6 +27,21 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Noto Serif Japanese",serif;
 }
 
+.visual{
+   padding: 0 200px 0 200px;
+    background-color: #FFF7F
+}
+
+@media  (max-width: 1366px){
+  .visual{
+    padding: 0 22px;
+  }
+}
+
+.under {
+  background: linear-gradient(transparent 50%, #a8eaff 50%);
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -90,6 +105,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 70px;
 }
 
+@media (max-width: 1000px) {
+  #header .logo img{
+    max-height: 20px;
+  }
+  
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -290,6 +311,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 50px;
 }
 
+.line {
+  margin-top:20px;
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -412,7 +436,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 992px) {
   #hero {
-    height: 100vh;
+    height: 200px;
   }
   #hero .carousel-container {
     top: 66px;
@@ -496,7 +520,7 @@ section {
   font-weight: 500;
   color:#00A99D;
   font-size: 28px;
-  line-height:80px;
+  line-height:60px;
   margin-left: 30px;
 }
 .about .content ul {
@@ -510,6 +534,7 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 4px;
+  margin-left: 30px;
   color: #5cb874;
   
 }
@@ -560,48 +585,35 @@ section {
 }
 
 
-.insta_btn {
-  display: inline-block;
-  text-align: center;/*中央揃え*/
-  color: #2e6ca5;/*文字色*/
-  font-size: 20px;/*文字サイズ*/
-  text-decoration: none;/*下線消す*/
+
+
+@media only screen and (max-width: 767px){
+ .about .content h3{
+   font-size: 20px !important;
+    line-height: 40px;
+    margin-left: 10px;
+    margin-right:10px;
+     
+ }
+ 
+   .about .content ul li p{
+   margin-left: 10px;
+     
+   }
+    
+  .about .content ul i {
+  margin-left: 10px;  
+  
 }
 
-.insta_btn:hover {/*ホバー時*/
-  color:#668ad8;/*文字色*/
-  transition: .5s;/*ゆっくり変化*/
+.about .owner{
+  margin : 0 auto;
+  text-align : center;
 }
 
-.insta_btn .insta{/*アイコンの背景*/
-  position: relative;/*相対配置*/
-  display: inline-block;
-  width: 50px;/*幅*/
-  height: 50px;/*高さ*/
-  background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
-  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;/*グラデーション①*/
-  overflow: hidden;/*はみ出た部分を隠す*/
-  border-radius: 13px;/*角丸に*/
-
+.card{
+  margin-top:20px;
 }
-
-.insta_btn .insta:before{/*グラデーションを重ねるため*/
-  content: '';
-  position: absolute;/*絶対配置*/
-  top: 23px;/*ずらす*/
-  left: -18px;/*ずらす*/
-  width: 60px;/*グラデーションカバーの幅*/
-  height: 60px;/*グラデーションカバーの高さ*/
-  background: -webkit-radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
-  background: radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);/*グラデーション②*/
-}
-
-.insta_btn .fa-instagram {/*アイコン*/
-  color: #FFF;/*白に*/
-  position: relative;/*z-indexを使うため*/
-  z-index: 2;/*グラデーションより前に*/
-  font-size: 35px;/*アイコンサイズ*/
-  line-height: 50px;/*高さと合わせる*/
 }
 
 
@@ -669,9 +681,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# menu1
+# menu-box
 --------------------------------------------------------------*/
-.menu1 .icon-box {
+.menu-box .icon-box {
   text-align: center;
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
@@ -680,154 +692,35 @@ section {
 }
 
   
-.menu1 .icon-box h4 {
+.menu-box .icon-box h4 {
   font-weight: 600;
   margin: 10px 0 15px 0;
   font-size: 22px;
 }
-.menu1 .icon-box h4 a {
+.menu-box .icon-box h4 a {
   color: #222222;
   transition: ease-in-out 0.3s;
 }
-.menu1 .icon-box p {
+.menu-box .icon-box p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
-.menu1 .icon-box:hover {
+.menu-box .icon-box:hover {
   border-color: #fff;
   box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
 
 }
-.menu1 .iconbox-teal i {
+.menu-box .iconbox-teal i {
   color: #11dbcf;
 }
-.menu1 .iconbox-teal:hover .icon i {
+.menu-box .iconbox-teal:hover .icon i {
   color: #fff;
 }
-.menu1 .iconbox-teal:hover .icon path {
+.menu-box .iconbox-teal:hover .icon path {
   fill: #11dbcf;
 }
 
-/*--------------------------------------------------------------
-# menu2
---------------------------------------------------------------*/
-.menu2 .icon-box {
-  text-align: center;
-  padding: 70px 20px 80px 20px;
-  transition: all ease-in-out 0.3s;
-  background: #fff;
-  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
-}
-
-.menu2 .icon-box h4 {
-  font-weight: 600;
-  margin: 10px 0 15px 0;
-  font-size: 22px;
-}
-.menu2 .icon-box h4 a {
-  color: #222222;
-  transition: ease-in-out 0.3s;
-}
-.menu2 .icon-box p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-.menu2 .icon-box:hover {
-  border-color: #fff;
-  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
-
-}
-.menu2 .iconbox-teal i {
-  color: #11dbcf;
-}
-.menu2 .iconbox-teal:hover .icon i {
-  color: #fff;
-}
-.menu2 .iconbox-teal:hover .icon path {
-  fill: #11dbcf;
-}
-
-/*--------------------------------------------------------------
-# menu3
---------------------------------------------------------------*/
-.menu3 .icon-box {
-  text-align: center;
-  padding: 70px 20px 80px 20px;
-  transition: all ease-in-out 0.3s;
-  background: #fff;
-  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
-}
-
-.menu3 .icon-box h4 {
-  font-weight: 600;
-  margin: 10px 0 15px 0;
-  font-size: 22px;
-}
-.menu3 .icon-box h4 a {
-  color: #222222;
-  transition: ease-in-out 0.3s;
-}
-.menu3 .icon-box p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-.menu3 .icon-box:hover {
-  border-color: #fff;
-  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
-
-}
-.menu3 .iconbox-teal i {
-  color: #11dbcf;
-}
-.menu3 .iconbox-teal:hover .icon i {
-  color: #fff;
-}
-.menu3 .iconbox-teal:hover .icon path {
-  fill: #11dbcf;
-}
-
-/*--------------------------------------------------------------
-# menu4
---------------------------------------------------------------*/
-.menu4 .icon-box {
-  text-align: center;
-  padding: 70px 20px 80px 20px;
-  transition: all ease-in-out 0.3s;
-  background: #fff;
-  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
-}
-
-.menu4 .icon-box h4 {
-  font-weight: 600;
-  margin: 10px 0 15px 0;
-  font-size: 22px;
-}
-.menu4 .icon-box h4 a {
-  color: #222222;
-  transition: ease-in-out 0.3s;
-}
-.menu4 .icon-box p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-.menu4 .icon-box:hover {
-  border-color: #fff;
-  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
-
-}
-.menu4 .iconbox-teal i {
-  color: #11dbcf;
-}
-.menu4 .iconbox-teal:hover .icon i {
-  color: #fff;
-}
-.menu4 .iconbox-teal:hover .icon path {
-  fill: #11dbcf;
-}
 
 
 /*--------------------------------------------------------------
@@ -1015,6 +908,9 @@ section {
   margin-left: 30px;
 }
 
+
+
+
 .menu-title {
   text-align: center;
   padding-bottom: 30px;
@@ -1030,6 +926,8 @@ section {
   margin-top: 20px;
 }
 
+
+
 .menu-title  h2::after{
   content: "";
     position: absolute;
@@ -1037,12 +935,19 @@ section {
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    top: 50%;
+    top: 50%; 
     left: 50%;
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     z-index: -1;
     opacity: 70%; 
+}
+
+.menu a {
+  
+  text-decoration: underline;
+  color: #00A99D;
+
 }
 
 .kitaidekiru-kouka  li{
@@ -1111,6 +1016,73 @@ a.btn--yellow:hover {
 .price{
   margin-top:0px;
 }
+
+/*--------------------------------------------------------------
+# menu画面　モバイル画面
+--------------------------------------------------------------*/
+
+
+@media only screen and (max-width: 767px){
+  .menu h3{
+    font-size: 20px !important;
+    line-height: 1.5;
+  }
+  
+  .menu-title h2{
+     font-size: 20px !important;
+    line-height: 1.5;
+  }
+  
+ .menu-title  h2::after{
+   width: 70px;
+    height: 70px;
+ }
+ 
+ .section-title h2{
+   font-size: 20px !important;
+    line-height: 1.5;
+ }
+
+ 
+ 
+}
+
+/*--------------------------------------------------------------
+# 禁忌事項画面
+--------------------------------------------------------------*/
+ .kinki-title{
+    text-align: center;
+  padding-bottom: 30px;
+ }
+
+.kinki-title h2 {
+  font-size: 30px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.kinki-title  h2::after{
+  content: "";
+    position: absolute;
+    background: #fad689;;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    top: 50%; 
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    opacity: 70%; 
+}
+
+
+
+
 
 /*--------------------------------------------------------------
 # Footer

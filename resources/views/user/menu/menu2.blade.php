@@ -6,6 +6,7 @@
 
 {{-- admin.blade.phpの@yield('content')に以下のタグを埋め込む --}}
 @section('content')
+<section class="visual">
     <!-- ======= menu紹介 ======= -->
     <section id="menu" class="menu">
       <div class="container">
@@ -15,13 +16,13 @@
         </div>
 
        <div style="text-align: center" >
-            <img src="{{secure_asset('assets/img/menu/facial.jpg')}}" class="img-fluid" alt="" style ="height: 600px; width: 800px; text-align: center; ">
+            <img src="{{secure_asset('assets/img/menu/facial.jpg')}}" class="img-fluid" alt="" style ="height: 80%; width: 80%; text-align: center; ">
           </div>
           
             <h3 style="text-align:center">お顔の脂肪をケアしながら表情筋を引き締める<br>独自のフェイシャル技術。</h3>
             
             
-             <p style="text-align:center">温熱作用と同時にEMSによる筋肉刺激を行うことで、<br>「引き締め」「ハリ感アップ」など、 目に見える結果をもたらします。<br>当店では、最後のケアに人幹細胞が含まれた美容液を導入いたします。</p>
+             <p style="text-align:center">温熱作用と同時にEMSによる筋肉刺激を行うことで、<br><span class="under">「引き締め」「ハリ感アップ」</span>など、 目に見える結果をもたらします。<br>当店では、最後のケアに人幹細胞が含まれた美容液を導入いたします。</p>
               
               
               
@@ -41,7 +42,7 @@
           </div>
          
          <ul class= "kitaidekiru-kouka">
-           <li><span style="color: #00A99D">ハリと弾力がアップ</span>：ラジオ波が摩擦熱運動を起こし、肌のコンディションを長時間活性化させます。それによって、ハリと弾力がアップが期待できます。</li> 
+           <li><span style="color: #00A99D">ハリと弾力がアップ</span>：ラジオ波が摩擦熱運動を起こし、肌のコンディションを長時間活性化させ、ハリと弾力がアップします。</li> 
            <li><span style="color: #00A99D">奥から整える</span>：電気穿孔法という先進的な浸透テクノロジーが、美容成分を肌の奥まで浸透させます。</li> 
            <li><span style="color: #00A99D">美肌へ導く</span>：LEDを照射して肌の調子を整えコンディションを活性化させるため、美肌効果を発揮します。</li> 
         </ul>
@@ -49,11 +50,9 @@
         
            <p style="text-align:center">その他効果：<u>リフトアップ、ほうれん線のスッキリ感、ハリ・うるおい・トーンアップ　</u></p> 
          
-            <div class="section-title">
-          <h2>ここにビフォーアフター画像が入ります</h2>
-          </div>
+           
              
-          <h3 style="text-align:center">目がぱっちり小顔に。肌のくすみが取れ、明るくツヤ肌へ。</h3>
+        
          
     </div>
     </section>
@@ -63,10 +62,10 @@
       <!-- =======  料金 Section ======= -->
      <section id="menu" class="menu">
           <div class="container">
-     　<div class="section-title">
-          <h2>ここに料金表が入ります。</h2>
-        
-        </div>
+     
+     　<div style="text-align: center" > 
+            <img src="{{secure_asset('assets/img/price/facial.png')}}" class="price" alt="" style ="height: 100%; width: 100%; text-align: center; ">
+           </div>
      
      
     </div>
@@ -89,7 +88,7 @@
             
                <dt><i class="wc-shortcodes-fa fa fa-caret-right " style="margin-right: 5px;"></i>誰でも受けられますか？</dt>
            
-                <dd>状況によって、ご利用できない方がおります。詳しくは以下よりご確認ください。<br><span href="" style="color: #00A99D"><u>ご利用いただけない方</u></span></dd>
+                <dd>状況によって、ご利用できない方がおります。詳しくは以下よりご確認ください。<br><span style="color: #00A99D"><a href="{{ action('Admin\AnsenaController@kinki') }}" >ご利用いただけない方</a></span></dd>
             
             
             </dl>
@@ -103,6 +102,6 @@
     
      <!-- ======= END　よくある質問 Section ======= -->
      
-    
+    </section>
     
 @endsection

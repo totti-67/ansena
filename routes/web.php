@@ -19,6 +19,9 @@ Route::group(['prefix' => 'user'], function() {
     Route::get('home', 'Admin\AnsenaController@home');
     Route::get('about', 'Admin\AnsenaController@about');
     Route::get('topics','Admin\AnsenaController@topics');
+    Route::get('news','Admin\AnsenaController@news');
+    Route::get('voice','Admin\AnsenaController@voice');
+    
     Route::get('menu1','Admin\AnsenaController@menu1');
     Route::get('menu2','Admin\AnsenaController@menu2');
     Route::get('menu3','Admin\AnsenaController@menu3');
@@ -30,5 +33,25 @@ Route::group(['prefix' => 'user'], function() {
     Route::get('menu9','Admin\AnsenaController@menu9');
     Route::get('menu10','Admin\AnsenaController@menu10');
     Route::get('menu11','Admin\AnsenaController@menu11');
+    Route::get('kinki','Admin\AnsenaController@kinki');
+    
     
 });
+
+
+//ここから管理者(NEWS)
+
+Route::get('/admin', 'Admin\NewsController@home');
+
+Route::group(['prefix' => 'admin'], function() {
+    
+Route::get('home', 'Admin\NewsController@home');
+Route::get('news', 'Admin\NewsController@news');
+Route::post('news/create', 'Admin\NewsController@create');
+
+Route::get('voice', 'Admin\VoiceController@voice');
+Route::post('voice/create', 'Admin\VoiceController@create');
+
+});
+
+//ここから管理者(Voice)

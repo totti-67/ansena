@@ -6,6 +6,7 @@
 
 {{-- admin.blade.phpの@yield('content')に以下のタグを埋め込む --}}
 @section('content')
+<section class="visual">
     <!-- ======= menu紹介 ======= -->
     <section id="menu" class="menu">
       <div class="container">
@@ -15,13 +16,13 @@
         </div>
 
        <div style="text-align: center" >
-            <img src="{{secure_asset('assets/img/menu/koragen.jpg')}}" class="img-fluid" alt="" style ="height: 600px; width: 800px; text-align: center; ">
+            <img src="{{secure_asset('assets/img/menu/koragen.jpg')}}" class="img-fluid" alt="" style ="height: 80%; width: 80%; text-align: center; ">
           </div>
           
             <h3 style="text-align:center">カラダの芯からあったまる、<br>　30分間　寝ているだけで全身のトリートメントを</h3>
             
             
-             <p style="text-align:center">633nmの可視光線を出す特殊な光を使用したヨーロッパ発のマシンです。<br>その光は真皮層まで届いて線維芽細胞に働きかけ、<br>光線の波長がコラーゲン・たんぱく質の生成を活性化、美肌へと導きます。<br>医療にも使われているので、安全性にも優れています。</p>
+             <p style="text-align:center">633nmの可視光線を出す特殊な光を使用したヨーロッパ発のマシンです。<br><span class="under">その光は真皮層まで届いて</span>線維芽細胞に働きかけ、<br>光線の波長がコラーゲン・たんぱく質の生成を活性化、<span class="under">美肌へと導きます</span>。<br>医療にも使われているので、安全性にも優れています。</p>
             　<p style="text-align:center"> また、電気製品が安全性を満たしていることを証明する<br>PSEマークを取得しているため、安心してご利用いただけます。</p>
               
               
@@ -65,10 +66,10 @@
       <!-- =======  料金 Section ======= -->
      <section id="menu" class="menu">
           <div class="container">
-     　<div class="section-title">
-          <h2>ここに料金表が入ります。</h2>
-        
-        </div>
+     
+     　<div style="text-align: center" > 
+            <img src="{{secure_asset('assets/img/price/koragen.png')}}" class="price" alt="" style ="height: 100%; width: 100%; text-align: center; ">
+           </div>
      
      
     </div>
@@ -91,7 +92,7 @@
             
                <dt><i class="wc-shortcodes-fa fa fa-caret-right " style="margin-right: 5px;"></i>誰でも受けられますか？</dt>
            
-                <dd>状況により受けられない方がいらっしゃいます。詳しくは以下よりご確認ください。<br><span href="" style="color: #00A99D"><u>ご利用いただけない方</u></span></dd>
+                <dd>状況により受けられない方がいらっしゃいます。詳しくは以下よりご確認ください。<br><span style="color: #00A99D"><a href="{{ action('Admin\AnsenaController@kinki') }}" >ご利用いただけない方</a></span></dd>
             
             
             </dl>
@@ -105,6 +106,6 @@
     
      <!-- ======= END　よくある質問 Section ======= -->
      
-    
+    </section>
     
 @endsection

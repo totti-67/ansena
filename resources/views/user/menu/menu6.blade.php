@@ -6,6 +6,7 @@
 
 {{-- admin.blade.phpの@yield('content')に以下のタグを埋め込む --}}
 @section('content')
+<section class="visual">
     <!-- ======= menu紹介 ======= -->
     <section id="menu" class="menu">
       <div class="container">
@@ -15,14 +16,14 @@
         </div>
 
        <div style="text-align: center" >
-            <img src="{{secure_asset('assets/img/menu/sanso.jpg')}}" class="img-fluid" alt="" style ="height: 600px; width: 800px; text-align: center; ">
+            <img src="{{secure_asset('assets/img/menu/sanso.JPG')}}" class="img-fluid" alt="" style ="height: 80%; width: 80%; text-align: center; ">
           </div>
           
             <h3 style="text-align:center">効率よくカラダを元気に　循環力を高めましょう！</h3>
             
             
              <p style="text-align:center">酸素は、組織の再生、解毒、免疫、脂肪燃焼などの働きになくてはならない物質で<br>東洋では昔からヨーガや気功などの呼吸法により、酸素摂取量を増やすことが健康の基本とされていました。</p>
-            　<p style="text-align:center"> 当サロンで使用している酸素カプセル『HBA Space』は、<br>酸素不足に陥った全身の細胞に十分な酸素を届けることが可能です。<br>血液や体液の流れがスムーズになることで、健康と美容効果が得られるマシンです。</p>
+            　<p style="text-align:center"> 当サロンで使用している<span class="under">酸素カプセル『HBA Space』</span>は、<br>酸素不足に陥った全身の細胞に十分な酸素を届けることが可能です。<br>血液や体液の流れがスムーズになることで、健康と美容効果が得られるマシンです。</p>
               
               
               
@@ -42,15 +43,15 @@
           </div>
          
          <ul class= "kitaidekiru-kouka">
-           <li><span style="color: #00A99D"> 疲労回復、ストレス解消</span>：十分な酸素を送り込むことにより、酸素不足状態を防ぎ、疲労回復だけでなく、ストレス解消にもつながります。</li> 
-           <li><span style="color: #00A99D">ダイエット効果</span>：脂肪分解酵素「リパーゼ」の発生を促進する効果があることから、体内に十分な酸素があれば、ダイエット効果も期待できます。</li> 
+           <li><span style="color: #00A99D"> 疲労回復、ストレス解消</span>：十分な酸素を送り込むことで、酸素不足状態を防ぎ、疲労回復・ストレス解消につながります。</li> 
+           <li><span style="color: #00A99D">ダイエット効果</span>：脂肪分解酵素「リパーゼ」の発生を促進する効果があることから、ダイエット効果も期待できます。</li> 
            <li><span style="color: #00A99D">集中力アップ、眠気防止</span>：脳細胞は酸素全体の25％も消費している為、集中力アップや眠気防止には酸素が必要です。</li> 
         
            
         </ul>
         
         
-            <p style="text-align:center">その他効果：<u>ケガの早期回復、美容効果、自律神経調整、冷え、肩こり、むくみの解消、アルコール分解効果、老化防止（アンチエイジング）　</u></p> 
+            <p style="text-align:center"><u>その他効果</u><br>ケガの早期回復、美容効果、自律神経調整、冷え、肩こり、むくみの解消、アルコール分解効果、老化防止（アンチエイジング）　</p> 
        
          
            
@@ -65,10 +66,10 @@
       <!-- =======  料金 Section ======= -->
      <section id="menu" class="menu">
           <div class="container">
-     　<div class="section-title">
-          <h2>ここに料金表が入ります。</h2>
-        
-        </div>
+     　
+     　　<div style="text-align: center" > 
+            <img src="{{secure_asset('assets/img/price/sanso.png')}}" class="price" alt="" style ="height: 100%; width: 100%; text-align: center; ">
+           </div>
      
      
     </div>
@@ -91,7 +92,7 @@
             
                <dt><i class="wc-shortcodes-fa fa fa-caret-right " style="margin-right: 5px;"></i>誰でも受けられますか？</dt>
            
-                <dd>状況により受けられない方がいらっしゃいます。詳しくは以下よりご確認ください。<br><span href="" style="color: #00A99D"><u>ご利用いただけない方</u></span></dd>
+                <dd>状況により受けられない方がいらっしゃいます。詳しくは以下よりご確認ください。<br><span style="color: #00A99D"><a href="{{ action('Admin\AnsenaController@kinki') }}" >ご利用いただけない方</a></span></dd>
             
             
             </dl>
@@ -105,6 +106,6 @@
     
      <!-- ======= END　よくある質問 Section ======= -->
      
-    
+    </section>
     
 @endsection

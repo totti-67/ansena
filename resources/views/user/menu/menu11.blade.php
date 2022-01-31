@@ -6,6 +6,8 @@
 
 {{-- admin.blade.phpの@yield('content')に以下のタグを埋め込む --}}
 @section('content')
+
+<section class="visual">
     <!-- ======= menu紹介 ======= -->
     <section id="menu" class="menu">
       <div class="container">
@@ -15,14 +17,14 @@
         </div>
 
        <div style="text-align: center" >
-            <img src="{{secure_asset('assets/img/menu/suiso.jpg')}}" class="img-fluid" alt="" style ="height: 600px; width: 800px; text-align: center; ">
+            <img src="{{secure_asset('assets/img/menu/bridal.jpg')}}" class="img-fluid" alt="" style ="height: 80%; width: 80%; text-align: center; ">
           </div>
           
-            <h3 style="text-align:center">たった60分の吸入で、水素水約42本分を体内へ<br>活性酸素を除去し、細胞レベルのエイジングケア</h3>
+            <h3 style="text-align:center">素敵なお式になりますように<br>完全オーダーメイドのアナタに合ったプランを。</h3>
             
             
-             <p style="text-align:center">体の不調や疲れの原因のひとつである活性酸素。<br>これを除去する効果があると言われている水素を鼻から吸入することで、<br>鼻の粘膜から毛細血管を通じ、全身に行き渡ります。</p>
-            　<p style="text-align:center"> 危険性は全くなく、体内に多く摂りこまれても水となって排出されるため、<br>副作用もなく安全です。日本製で高いクオリティと信頼性を誇るマシンです。</p>
+             <p style="text-align:center">無料カウンセリングで細部までヒアリング。<br>サロンの様々なMENUを組み合わせ、それぞれの目的に沿ったプランをお作りいたします。</p>
+            　<p style="text-align:center"> 新婦様・新郎様ご一緒にぜひ。</p>
               
               
               
@@ -34,40 +36,17 @@
       </div>
     </section><!-- End menu紹介 -->
     
-     <!-- ======= 効果 Section ======s= -->
-     <section id="menu" class="menu">
-          <div class="container">
-     　<div class="section-title">
-          <h2>期待できる効果</h2>
-          </div>
-         
-         <ul class= "kitaidekiru-kouka">
-           <li><span style="color: #00A99D"> 細胞レベルのエイジングケア</span>：老化、体調不良、アトピー、喘息、アレルギーなどさまざまなトラブルの要因である、悪玉の活性酸素を水素が除去します。</li> 
-           
-        
-           
-        </ul>
-        
-        
-            <p style="text-align:center">その他効果：<u>新陳代謝アップ、免疫力アップ、疲労回復、肌荒れ改善、花粉症,アレルギーの軽減、眼精疲労の改善、ダイエット、二日酔いの改善など　</u></p> 
-       
-         
-           
-             
-          <h3 style="text-align:center">水素吸入で内側から身体を元気に！</h3>
-         
-    </div>
-    </section>
+      <!-- =======  カウンセリングはこちら画像 Section ======= -->
     
-     <!-- ======= END 効果 Section ======= -->
+     
+     <!-- =======  ENDカウンセリングはこちら画像 Section ======= -->
      
       <!-- =======  料金 Section ======= -->
      <section id="menu" class="menu">
           <div class="container">
-     　<div class="section-title">
-          <h2>ここに料金表が入ります。</h2>
-        
-        </div>
+     　　<div style="text-align: center" > 
+            <img src="{{secure_asset('assets/img/price/bridal.png')}}" class="price" alt="" style ="height: 100%; width: 100%; text-align: center; ">
+           </div>
      
      
     </div>
@@ -123,6 +102,6 @@
     
      <!-- ======= END　よくある質問 Section ======= -->
      
-    
+    </section>
     
 @endsection

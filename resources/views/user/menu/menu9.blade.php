@@ -6,6 +6,8 @@
 
 {{-- admin.blade.phpの@yield('content')に以下のタグを埋め込む --}}
 @section('content')
+
+<section class="visual">
     <!-- ======= menu紹介 ======= -->
     <section id="menu" class="menu">
       <div class="container">
@@ -15,12 +17,12 @@
         </div>
 
        <div style="text-align: center" >
-            <img src="{{secure_asset('assets/img/menu/fuse.jpg')}}" class="img-fluid" alt="" style ="height: 600px; width: 800px; text-align: center; ">
+            <img src="{{secure_asset('assets/img/menu/fuse.jpg')}}" class="img-fluid" alt="" style ="height: 80%; width: 80%; text-align: center; ">
           </div>
           
             <h3 style="text-align:center">知る人ぞ知る、布施代表の施術<br>一人一人と丁寧に向き合い、一緒にカラダを整えます</h3>
 
-         <p style="text-align:center">鍼灸の国家資格を持ち、複数のスポーツチームのトレーナーを務めた後、治療院を開業。<br>これまで数多くのトップアスリートを怪我からの復帰へと導き、<br>千葉県白井市にある治療院では1日に100人施術を行うほどの敏腕トレーナー。<br>「治るまでとことん」をモットーとする布施代表があなたの身体を根本からサポートします。</p>
+         <p style="text-align:center">鍼灸の国家資格を持ち、複数のスポーツチームのトレーナーを務めた後、治療院を開業。<br>これまで数多くの<span class="under">トップアスリートを怪我からの復帰へと導き</span><br>千葉県白井市にある治療院では1日に100人施術を行うほどの敏腕トレーナー。<br>「治るまでとことん」をモットーとする布施代表があなたの身体を根本からサポートします。</p>
 
       </div>
     </section><!-- End menu紹介 -->
@@ -36,13 +38,13 @@
          
          <ul class= "kitaidekiru-kouka">
            <li><span style="color: #00A99D">各個人に合わせた治療</span>：数多くのアスリートをみてきた布施代表ならではの、あなたの身体に対して適切な治療を致します。</li> 
-           <li><span style="color: #00A99D">徹底的な分析</span>：身体の構造から原因を紐解いて、それをわかりやすく伝えます。自分の身体への理解が深まることで、治りが早くなるのです。</li> 
-           <li><span style="color: #00A99D">全治3ヶ月を1ヶ月で。</span>：全治3ヶ月を1ヶ月で怪我から復帰させた実績があります。諦めずにできることから、とことん治療致します。</li> 
+           <li><span style="color: #00A99D">徹底的な分析</span>：身体の構造から原因を紐解き、わかりやすく伝えます。自分の身体への理解が深まることで、治りが早くなるのです。</li> 
+           <li><span style="color: #00A99D">全治3ヶ月を1ヶ月で。</span>：全治3ヶ月を1ヶ月で怪我から復帰させた実績があります。できることから、とことん治療致します。</li> 
         
            
         </ul>
         
-        <p style="text-align:left">完全紹介制：<u>当メニューは完全紹介制となるため、ご予約の際は紹介者のお名前をお伝えください。</u></p>
+      
            
     </div>
     </section>
@@ -52,10 +54,10 @@
       <!-- =======  料金 Section ======= -->
      <section id="menu" class="menu">
           <div class="container">
-     　<div class="section-title">
-          <h2>ここに料金表が入ります。</h2>
-        
-        </div>
+    
+     　<div style="text-align: center" > 
+            <img src="{{secure_asset('assets/img/price/fuse.png')}}" class="price" alt="" style ="height: 100%; width: 100%; text-align: center; ">
+           </div>
      
      
     </div>
@@ -111,7 +113,7 @@
        <!-- end 布施さん紹介 -->
      
      
-     
+     </section>
     
     
 @endsection

@@ -58,33 +58,29 @@
            <p style="text-align:center">その他効果<br><u>ケガの早期回復、美容効果、自律神経調整、冷え、肩こり、むくみの解消、アルコール分解効果、老化防止（アンチエイジング）</u></p> 
          
           <div style="text-align: center" > 
-            <img src="{{secure_asset('assets/img/before-after/kinpaku.jpeg')}}" class="before-after" alt="" style ="height: 90%; width: 90%; text-align: center; ">
+            <img src="{{secure_asset('assets/img/before-after/kinpaku.jpeg')}}" class="before-after" alt="" style ="height: 50%; width: 50%; text-align: center; ">
            </div>
            
           <h3 style="text-align:center">目がぱっちり小顔に。肌のくすみが取れ、明るくツヤ肌へ。</h3>
          
+         <div class="price">
+          
+     　<div style="text-align: center" > 
+            <img src="{{secure_asset('assets/img/price/kinpaku2.png')}}" class="price" alt="" style ="height: 70%; width: 70%; text-align: center; ">
+           </div>
     </div>
     </section>
     
      <!-- ======= END 効果 Section ======= -->
      
-      <!-- =======  料金 Section ======= -->
-     <section id="menu" class="menu">
-          <div class="container">
+     
+              
               
              
-          
-     　<div style="text-align: center" > 
-            <img src="{{secure_asset('assets/img/price/kinpaku.png')}}" class="price" alt="" style ="height: 100%; width: 100%; text-align: center; ">
-           </div>
-     
-     
-    </div>
-    </section>
     <!-- ======= END 料金 Section ======= -->
      
      <!-- ======= よくある質問 Section ======= -->
-     <section id="menu" class="menu">
+     <section id="price" class="menu">
           <div class="container">
      　<div class="section-title">
           <h2>Q&A</h2>
